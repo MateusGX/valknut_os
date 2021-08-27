@@ -1,5 +1,6 @@
 bits 32
 global _start
+global _nop
 extern main
 extern init
 
@@ -16,6 +17,9 @@ mov esp, stack
 call init
 call main
 hlt
+
+_nop:
+nop
 
 section .bss
 resb 8192

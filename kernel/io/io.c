@@ -26,10 +26,11 @@ void _print(char *str, unsigned char style, unsigned int startPosition)
 
 void _clear()
 {
-  while (videoBufferPosition > 0)
+  unsigned int screenSize = 50 * 160;
+  while (screenSize > 0)
   {
-    getVGA()[videoBufferPosition - 2] = NULL;
-    getVGA()[videoBufferPosition - 1] = NULL;
-    videoBufferPosition -= 2;
+    getVGA()[screenSize - 1] = NULL;
+    getVGA()[screenSize] = NULL;
+    screenSize -= 2;
   }
 }

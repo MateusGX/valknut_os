@@ -1,0 +1,1 @@
+void setfooter(char* text, unsigned char style);

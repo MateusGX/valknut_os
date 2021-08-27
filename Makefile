@@ -3,6 +3,8 @@ TARGET=valknut
 C_FILES=./kernel/screen/screen.c  \
 		./kernel/libs/string.c \
 		./kernel/io/io.c \
+		./kernel/graphics/footer.c \
+		./kernel/sys/sys.c \
 		./kernel.c
 
 OBJS=$(C_FILES:.c=.o)
@@ -29,4 +31,6 @@ clean:
 	rm -f ./kernel/io/*.o
 	rm -f ./kernel/libs/*.o
 	rm -f ./kernel/screen/*.o
+	rm -f ./kernel/graphics/*.o
+	rm -f ./kernel/sys/*.o
 	rm -f ./iso/boot/$(TARGET)
