@@ -15,4 +15,4 @@ A simple kernel in development.
 ## SCREENSHOTS
 - INITIAL SCREEN
 
-![initScreen](https://user-images.githubusercontent.com/36079548/129724411-445413e2-8a63-4ee0-a0e3-71e01805fcb9.png)
+![InitialScreen](https://user-images.githubusercontent.com/36079548/131131786-a049908a-51fb-4b37-9e74-4557dc3390fc.png)
